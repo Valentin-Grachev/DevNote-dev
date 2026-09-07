@@ -1,9 +1,9 @@
 
 namespace DevNote
 {
-    public interface ISaveData
+    public interface ISaveData<T>
     {
-        public void ParseSaveData(string saveData);
+        public T ParseSaveData(string saveData);
 
         public string ToSaveData();
 
