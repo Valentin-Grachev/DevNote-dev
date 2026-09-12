@@ -86,6 +86,9 @@ namespace DevNote
                 .Replace("\r", string.Empty);
         }
 
+        public static bool TranslationExists(string key)
+             => _instance._tranlationDictionary.ContainsKey(key);
+
 
     }
 
